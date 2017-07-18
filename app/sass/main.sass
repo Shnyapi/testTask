@@ -1,0 +1,199 @@
+@import "../css/_reset.css"
+@import "../css/_popap.css"
+
+
+@font-face
+    font-family: Conqueror sans
+    src: url(../fonts/conquerorsans.otf)
+@font-face
+    font-family: Kievit medium
+    src: url(../fonts/kievit_medium.ttf)
+
+input.form-control
+  background-color: #e2e6ee
+  color: #7f859d
+textarea.form-control
+  background-color: #e2e6ee
+  color: #7f859d
+input.form-control:focus
+  border: 3px solid #0391ff
+  box-shadow: none
+textarea.form-control:focus
+  border: 3px solid #0391ff
+  box-shadow: none
+
+
+.header
+  font-family: Conqueror sans
+  p
+    margin-left: 5px
+    font-size: 16px
+    display: inline-block
+  &-top
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    justify-content: center
+    flex-direction: row
+    align-items: center
+    height: 145px
+    &-img
+      img
+        width: 100%
+    &-email
+      display: flex
+      flex-direction: row
+      align-items: center
+    &-phone
+      display: flex
+      flex-direction: row
+      align-items: center
+    &-popap
+      button
+        background-color: #37d55c
+        border: none
+        color: #fff
+        width: 100%
+        height: 60px
+        border-radius: 50px
+        -webkit-box-shadow: 0px 10px 17px 0px rgba(195,242,206,1)
+        -moz-box-shadow: 0px 10px 17px 0px rgba(195,242,206,1)
+        box-shadow: 0px 10px 17px 0px rgba(195,242,206,1)
+  &-nav
+    background: url(../img/header-nav-bg.jpg) repeat-x
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    height: 50px
+    a
+      color: #fff
+    // &-list
+    //   display: -webkit-flex
+    //   display: -ms-flex
+    //   display: flex
+    //   flex-direction: row
+    //   justify-content: center
+    //   align-items: center
+    &-item
+      display: inline-block
+    &-dots
+      width: 5px
+      height: 5px
+      border-radius: 50%
+      background-color: #6c77a4
+      display: inline-block
+      margin: 0 15px
+      margin-bottom: 3px
+.shortInform
+  font-family: Kievit medium
+  height: 650px
+
+  p
+    font-size: 22px
+    margin-bottom: 45px
+
+  h3
+    margin-top: 190px
+    font-size: 45px
+  hr
+    border-top: 2px solid #0391ff
+    width: 150px
+    margin: 45px 0
+  &-wrap
+    background-image: url(../img/shortInform-bg.png)
+    background-position-x: 47%
+    position: relative
+    top: -60px
+  &-contacts
+    p
+      display: inline-block
+      margin-left: 15px
+      vertical-align: super
+
+.writeUs
+  height: 600px
+  background: url(../img/writeUs-bg.jpg)
+  background-size: cover
+  background-position: center
+  margin-top: -80px
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+  &-form
+    height: 400px
+    background-color: #fff
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    &-inputs
+      width: 100%
+    &-wrap
+      width: 82%
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      align-items: center
+      height: 100%
+      h3
+        font-size: 45px
+    &-button
+      width: 200px
+      border-radius: 40px
+      background-color: #0391ff
+      height: 50px
+      border: none
+      color: #fff
+      -webkit-box-shadow: 0px 10px 17px 0px rgba(183,213,249,1)
+      -moz-box-shadow: 0px 10px 17px 0px rgba(183,213,249,1)
+      box-shadow: 0px 10px 17px 0px rgba(183,213,249,1)
+.textarea-wrap
+  width: 100%
+
+.footer
+  font-family: Conqueror sans
+  background-color: #232531
+  height: 300px
+  &-nav
+    margin: 65px 0
+    &-dots
+      display: inline-block
+      color: #3c3f4c
+      margin: 0 50px
+    &-list
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-items: center
+    &-item
+      display: inline-block
+      a
+        color: #9fa6b8
+  &-bottom
+
+    p
+      color: #4c506a
+    &-left
+      float: left
+      p:first-child
+        margin-bottom: 20px
+    &-right
+      float: right
+      p
+        text-align: end
+      p:first-child
+        margin: 30px 0 5px 0
