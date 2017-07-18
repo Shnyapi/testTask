@@ -1,6 +1,7 @@
 @import "../css/_reset.css"
 @import "../css/_popap.css"
 
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed')
 
 @font-face
     font-family: Conqueror sans
@@ -8,6 +9,9 @@
 @font-face
     font-family: Kievit medium
     src: url(../fonts/kievit_medium.ttf)
+
+body
+  font-family: 'Roboto Condensed', sans-serif;
 
 input.form-control
   background-color: #e2e6ee
@@ -104,7 +108,8 @@ textarea.form-control:focus
     margin: 45px 0
   &-wrap
     background-image: url(../img/shortInform-bg.png)
-    background-position-x: 47%
+    background-position-x: 50%
+    background-size: cover
     position: relative
     top: -60px
   &-contacts
@@ -112,6 +117,15 @@ textarea.form-control:focus
       display: inline-block
       margin-left: 15px
       vertical-align: super
+.arrow-down,.arrow-up
+  position: relative
+  left: 50%
+  margin-left: -24px
+  img
+    margin-left: -11px
+.arrow-down
+  margin-top: -4px
+  height: 20px
 
 .writeUs
   height: 600px
@@ -149,6 +163,7 @@ textarea.form-control:focus
       height: 100%
       h3
         font-size: 45px
+        color: #5e6685
     &-button
       width: 200px
       border-radius: 40px
